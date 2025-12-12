@@ -1,5 +1,7 @@
 # Coverage-Based Standardization for Cultural Data: Correcting Collection Bias in Comparative Research
 
+[![DOI](https://zenodo.org/badge/1115066641.svg)](https://doi.org/10.5281/zenodo.17911413)
+
 > Folgert Karsdorp, Anne Kandler, Mike Kestemont, Iza Romanowska, and Rombert Stapel
 
 Code and data accompanying the paper "Coverage-Based Standardization for Cultural Data: Correcting Collection Bias in Comparative Research". Below we describe the main purpose of each file and link them to the images in the manuscript. 
