@@ -7,7 +7,7 @@ Code and data accompanying the paper "Coverage-Based Standardization for Cultura
 # File structure
 ## Notebooks
 - Figure 1: notebooks/example-figure.ipynb
-- Main simulation experiments (Figures 2, 3, 4, 5, S1, S6): notebooks/simulation.ipynb
+- Main simulation experiments (Figures 2, 3, 4, 5, S1, S6): [notebooks/simulation.ipynb](notebooks/simulation.ipynb)
 - Coverage threshold analysis (Figure S5): notebooks/coverage_threshold.ipynb
 - Population size regression analysis (Figure 6): notebooks/song-coverage.ipynb
 - Diachronic regression analysis (Figure 7): notebooks/song-coverage-diachronic.ipynb
