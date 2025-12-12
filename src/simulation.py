@@ -73,7 +73,6 @@ def stratified_sampling(populations, pop_sizes, bias=0.0, target_sample_size=100
         population = populations[idx]
 
         if not population:
-            # Population is depleted, so adjust probablities
             sampling_probabilities[idx] = 0
             sampling_probabilities /= sampling_probabilities.sum()
             continue
@@ -93,7 +92,7 @@ def productivity_paradox_sampling(populations, pop_sizes, beta=0.7, target_sampl
     K = len(pop_sizes)
     samples = [[] for _ in range(K)]
     pops = [p.tolist() for p in populations]
-    samples_per_pop = np.zeros(K, dtype=float)  # true counts; eps added in weights
+    samples_per_pop = np.zeros(K, dtype=float)
     N = np.asarray(pop_sizes, dtype=float)
 
     sample_size = 0
@@ -101,7 +100,6 @@ def productivity_paradox_sampling(populations, pop_sizes, beta=0.7, target_sampl
         if all(len(pop) == 0 for pop in pops):
             break
 
-        # productivity evidence
         if per_capita:
             prod_raw = (samples_per_pop / np.maximum(N, 1)) + eps
         else:
@@ -109,7 +107,6 @@ def productivity_paradox_sampling(populations, pop_sizes, beta=0.7, target_sampl
 
         weights = prod_raw ** beta
 
-        # zero out depleted
         for i, pop in enumerate(pops):
             if len(pop) == 0:
                 weights[i] = 0.0
@@ -164,7 +161,6 @@ def stromers_riddle_sampling(populations, pop_sizes, gamma=1.0, target_sample_si
 
     draws = 0
     while draws < target_sample_size:
-        # stop if all populations are empty
         if all(t == 0 for t in totals):
             break
 
@@ -172,7 +168,7 @@ def stromers_riddle_sampling(populations, pop_sizes, gamma=1.0, target_sample_si
         pop_idx = rng.choice(available)
 
         variants, w = variant_weights(counters[pop_idx])
-        if not variants:  # defensive
+        if not variants:
             totals[pop_idx] = 0
             continue
 
@@ -395,11 +391,6 @@ def plot_relative_richness(estimates, sample_sizes, pop_sizes, betas, S_true,
         axes[i].plot(pop_sizes, S_true / reference_point(S_true), '--', color="grey", zorder=20)
     
     axes[0].set_ylabel("Relative richness", size=10)
-    
-    # custom_lines = [Line2D([0], [0], color=f"C{i}", lw=1) for i in range(len(betas))]
-    # fig.legend(custom_lines, [fr'$b={beta}$' for beta in betas],
-    #           loc="upper left", ncol=len(betas), bbox_to_anchor=(0.07, 1.01),
-    #           frameon=False, fontsize=8, columnspacing=0.5)
     
     fig.supxlabel("Population size (log)", size=10)
     fig.suptitle(title, x=1, y=1, ha="right")
