@@ -9,18 +9,6 @@ authors:
     family-names: Karsdorp
     affiliation: KNAW Meertens Institute
     orcid: 'https://orcid.org/0000-0002-5958-0551'
-  - given-names: Anne
-    family-names: Kandler
-    affiliation: Max Planck Institute for Evolutionary Anthropology
-  - given-names: Mike
-    family-names: Kestemont
-    affiliation: University of Antwerp
-  - given-names: Iza
-    family-names: Romanowska
-    affiliation: Aarhus University
-  - given-names: Rombert
-    family-names: Stapel
-    affiliation: KNAW IISG
 identifiers:
   - type: doi
     value: 10.5281/zenodo.17911414
