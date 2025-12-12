@@ -7,35 +7,35 @@ Code and data accompanying the paper "Coverage-Based Standardization for Cultura
 # File structure
 ## Notebooks
 - Figure 1: notebooks/example-figure.ipynb
-- Main simulation experiments (Figures 2, 3, 4, 5, S1, S6): [notebooks/simulation.ipynb](notebooks/simulation.ipynb)
-- Coverage threshold analysis (Figure S5): notebooks/coverage_threshold.ipynb
-- Population size regression analysis (Figure 6): notebooks/song-coverage.ipynb
-- Diachronic regression analysis (Figure 7): notebooks/song-coverage-diachronic.ipynb
-- Coverage accuracy analysis (Figures S2, S3, S4), coverage_accuracy.ipynb
-- Construct Amsterdam song data: notebooks/make-data-amsterdam.ipynb
-- Construct song data: notebooks/make-data-17th-century.ipynb
+- Main simulation experiments (Figures 2, 3, 4, 5, S1, S6): [simulation.ipynb](notebooks/simulation.ipynb)
+- Coverage threshold analysis (Figure S5): [coverage_threshold.ipynb](notebooks/coverage_threshold.ipynb)
+- Population size regression analysis (Figure 6): [song-coverage.ipynb](notebooks/song-coverage.ipynb)
+- Diachronic regression analysis (Figure 7): [song-coverage-diachronic.ipynb](notebooks/song-coverage-diachronic.ipynb)
+- Coverage accuracy analysis (Figures S2, S3, S4), [coverage_accuracy.ipynb](notebooks/coverage_accuracy.ipynb)
+- Construct Amsterdam song data: [make-data-amsterdam.ipynb](notebooks/make-data-amsterdam.ipynb)
+- Construct song data: [make-data-17th-century.ipynb](notebooks/make-data-17th-century.ipynb)
 
 ## Supporting Source Code
-- Implementation of collection biases: src/simulation.py
-- Wright-Fisher model implementation: src/model.py
-- Main experiment functions: src/experiment.py
-- Make data for coverage accuracy and ratio accuracy analysis: src/coverage_threshold.py
-- Some utility functions: src/utils.py
+- Implementation of collection biases: [simulation.py](src/simulation.py)
+- Wright-Fisher model implementation: [model.py](src/model.py)
+- Main experiment functions: [experiment.py](src/experiment.py)
+- Make data for coverage accuracy and ratio accuracy analysis: [coverage_threshold.py](src/coverage_threshold.py)
+- Some utility functions: [utils.py](src/utils.py)
 
 ## Data (empirical and generated)
-- Dutch Song Database melody locations counts: data/dsd-melody-place-counts-census.csv
-- Stratified sampling data: data/exp_stratified-new.pkl
-- Productivity paradox sampling data: data/exp_productivity-new.pkl
-- Stromer's Riddle paradox sampling data: data/exp_stromer-new.pkl
-- Wright-Fisher populations: data/populations_list.pkl
-- True diversity numbers from Wright-Fisher populations: data/S_true.npy
+- Dutch Song Database melody locations counts: [dsd-melody-place-counts-census.csv](data/dsd-melody-place-counts-census.csv)
+- Stratified sampling data: [exp_stratified-new.pkl](data/exp_stratified-new.pkl)
+- Productivity paradox sampling data: [exp_productivity-new.pkl](data/exp_productivity-new.pkl)
+- Stromer's Riddle paradox sampling data: [exp_stromer-new.pkl](data/exp_stromer-new.pkl)
+- Wright-Fisher populations: [populations_list.pkl](data/populations_list.pkl)
+- True diversity numbers from Wright-Fisher populations: [data/S_true.npy](data/S_true.npy)
 - Population diversity comparisons:
-    - data/threshold_populations1-3.pkl
-    - data/threshold_populations1-4.pkl
-    - data/threshold_populations1-2.pkl
-- Census data: data/population-estimates.csv
-- Dutch Song Database melody counts Amsterdam: data/dsd-amsterdam-melody-decade-counts.csv
-- Standardized Dutch place names: data/placenames.json
+    - [threshold_populations1-3.pkl](data/threshold_populations1-3.pkl)
+    - [threshold_populations1-4.pkl](data/threshold_populations1-4.pkl)
+    - [threshold_populations1-2.pkl](data/threshold_populations1-2.pkl)
+- Census data: [population-estimates.csv](data/population-estimates.csv)
+- Dutch Song Database melody counts Amsterdam: [dsd-amsterdam-melody-decade-counts.csv](data/dsd-amsterdam-melody-decade-counts.csv)
+- Standardized Dutch place names: [placenames.json](data/placenames.json)
 
 # Installation
 1. `curl -LsSf https://astral.sh/uv/install.sh | sh`
