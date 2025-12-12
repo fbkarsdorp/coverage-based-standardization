@@ -2,6 +2,8 @@
 
 Code and data accompanying the paper "Coverage-Based Standardization for Cultural Data: Correcting Collection Bias in Comparative Research". Below we describe the main purpose of each file and link them to the images in the manuscript. 
 
+![example-image](example-graph-slim.png)
+
 # File structure
 ## Notebooks
 - Figure 1: notebooks/example-figure.ipynb
