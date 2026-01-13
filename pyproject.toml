@@ -1,7 +1,7 @@
 [project]
 name = "coverage-complexity"
 version = "0.1.0"
-description = "Code accompanying the paper 'Coverage-Based Standardization for Cultural Data: Correcting Collection Bias in Comparative Research'"
+description = "Code accompanying the paper 'Correcting collection bias in comparative studies of diversity'"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
