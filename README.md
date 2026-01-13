@@ -1,8 +1,8 @@
-# Correcting collection bias in comparative diversity inference using coverage-based standardization
+# Correcting collection bias in comparative studies of diversity
 
 <!-- [![DOI](https://zenodo.org/badge/1115066641.svg)](https://doi.org/10.5281/zenodo.17951095) -->
 
-Code and data accompanying the paper "Correcting collection bias in comparative diversity inference using coverage-based standardization". Below we describe the main purpose of each file and link them to the images in the manuscript. 
+Code and data accompanying the paper "Correcting collection bias in comparative studies of diversity". Below we describe the main purpose of each file and link them to the images in the manuscript. 
 
 ![example-image](example-graph-slim.png)
 
